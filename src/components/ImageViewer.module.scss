@@ -1,0 +1,21 @@
+@use '../style/colors' as *;
+
+.imageViewer {
+  background-color: $grey-background;
+  height: 40rem;
+  display: flex;
+  border-radius: 1.125rem;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    user-drag: none;
+    -webkit-user-drag: none;
+  }
+}
